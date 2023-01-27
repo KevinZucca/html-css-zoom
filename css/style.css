@@ -12,7 +12,29 @@
 /* MAIN */
 main {
     height: 90%;
+    position: relative;
 }
+
+main .view {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+main .view button  {
+    font-size: 1em;
+    background-color: #4a4a4a;
+    border-radius: 5px;
+    padding: 0.3em;
+    margin: 0.3em;
+    color: white;
+}
+
+main .view button:hover {
+    cursor: pointer;
+}
+
+
 
 
 main .main-centered {
