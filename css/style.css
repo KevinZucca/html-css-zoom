@@ -7,16 +7,13 @@
     max-width: 1500px;
 }
 
+
+
+/* MAIN */
 main {
     height: 90%;
 }
-nav {
-    height: 10%;
-    background-color: #222222;
-    display: flex;
-    justify-content: space-between;
-   
-} 
+
 
 main .main-centered {
     width: 100%;
@@ -33,23 +30,102 @@ main .main-centered {
     height: calc(100% / 5);
     background-color: white;
     border: 1px solid black;
+    position: relative;
 }
 
+main .name {
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* //MAIN */
+
+
+
+
+
+/* NAV */
+
+nav {
+    height: 10%;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+   
+} 
+
+nav .icon {
+    color: white;
+}
+
+nav .icon.options {
+    font-size: 2em;
+}
+
+nav .icon-box {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+nav .icon-box p {
+    font-size: small;
+    color: white;
+}
 
 nav .nav-left {
     height: 100%;
-    background-color: rgb(239, 214, 214);
     width: 10%;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-left: 1em;
+} 
 
 nav .nav-center {
     height: 100%;
-    background-color: rgb(239, 214, 214);
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
+
+.icon-box #green-icon {
+    color: #4bc800;
+}
+
 
 nav .nav-right {
     height: 100%;
-    background-color: rgb(239, 214, 214);
+
     width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
+
+.nav-right button {
+    color: #d52206;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+    background-color: #4a4a4a;
+}
+
+.nav-right button:hover {
+    cursor: pointer;
+}
+
+/* //NAV */
+
+
+
