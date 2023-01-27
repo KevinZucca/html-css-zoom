@@ -23,14 +23,19 @@ main .main-centered {
     flex-flow: row wrap;
     justify-content: center;
     padding: 50px;
+    gap: 2px;
 }
 
 .main-centered .picture {
-    width: calc(100% / 7);
-    height: calc(100% / 5);
+    width: calc(100% / 7 - 14px);
+    height: calc(100% / 5 - 15px);
     background-color: white;
     border: 1px solid black;
     position: relative;
+    margin-bottom: 3px;
+    background-image: url("https://picsum.photos/536/354");
+    background-size: 100% 100%;
+    background-position: center;
 }
 
 main .name {
@@ -38,6 +43,9 @@ main .name {
     position: absolute;
     bottom: 0;
     left: 0;
+    background-color:rgba(1, 1, 1, 0.4);
+    color: white;
+    padding: 0.2em;    
 }
 
 /* //MAIN */
